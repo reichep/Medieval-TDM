@@ -8,6 +8,8 @@ const GRID_H = 20;
 let towers = [];
 let enemies = [];
 
+let waveStarted = false;
+
 function drawGrid(){
 
 ctx.strokeStyle="#567d46";
@@ -49,11 +51,6 @@ requestAnimationFrame(gameLoop);
 
 }
 
-
-gameLoop();
-
-let waveStarted = false;
-
 function spawnCheck(){
 
 if(!waveStarted){
@@ -64,3 +61,6 @@ waveStarted = true;
 }
 
 }
+
+/* start the engine AFTER everything is defined */
+gameLoop();
