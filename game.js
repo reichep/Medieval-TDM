@@ -25,6 +25,8 @@ function update(){
 updateEnemies();
 updateTowers();
 
+spawnCheck();
+
 }
 
 function draw(){
@@ -47,4 +49,18 @@ requestAnimationFrame(gameLoop);
 
 }
 
+
 gameLoop();
+
+let waveStarted = false;
+
+function spawnCheck(){
+
+if(!waveStarted){
+
+spawnWave();
+waveStarted = true;
+
+}
+
+}
