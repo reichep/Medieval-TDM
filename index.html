@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Back to the Basics: Medieval TDM</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="menu">
+<h1>Back to the Basics</h1>
+<h2>Medieval TDM</h2>
+<button onclick="startGame()">Start Game</button>
+</div>
+
+<div id="gameUI" style="display:none;">
+
+<div id="topBar">
+<span id="hearts">♥ ♥ ♥ ♥ ♥</span>
+<span id="banners">Banners: 50</span>
+<span id="wave">Wave 1</span>
+</div>
+
+<canvas id="gameCanvas" width="640" height="800"></canvas>
+
+<div id="towerBar">
+<button onclick="selectTower('archer')">Archery</button>
+<button onclick="selectTower('ballista')">Ballista</button>
+<button onclick="selectTower('trebuchet')">Trebuchet</button>
+<button onclick="selectTower('tar')">Hot Tar</button>
+<button onclick="selectTower('mage')">Mage</button>
+<button onclick="selectTower('poison')">Poison</button>
+<button onclick="selectTower('dragon')">Dragon</button>
+</div>
+
+</div>
+
+<script src="game.js"></script>
+<script src="towers.js"></script>
+<script src="enemies.js"></script>
+<script src="levels.js"></script>
+<script src="ui.js"></script>
+
+</body>
+</html>
